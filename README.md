@@ -19,6 +19,9 @@ Guess the secret number between 1 and 20. The game tracks your score and highsco
 4. Click **Again!** to start a new round.
 5. Click **Restart Game** to reset everything including highscore.
 
+## Live Link
+
+https://shehz4d.github.io/Guess-the-Number/
 
 ## Technologies
 
