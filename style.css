@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Base */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff8e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+/* STATES */
+body.win {
+  background-color: #d1fae5;
+}
+
+body.lose {
+  background-color: #f8d7da;
+}
+
+/* Container */
+.container {
+  background: #ffffff;
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  width: 70rem;
+  max-width: 90%;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.range {
+  font-size: 1.4rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+/* Number */
+.number {
+  font-size: 4rem;
+  background: #fcd77f;
+  color: #333;
+  width: 15rem;
+  padding: 2rem 0;
+  margin: 2rem auto;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+/* Layout */
+.game {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+/* Input */
+.guess {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: #fffbe6;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: all 0.25s ease;
+  font-weight: 600;
+}
+
+/* Check */
+.check {
+  background: #fbbf24;
+}
+
+.check:hover {
+  background: #f59e0b;
+}
+
+.check:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Again */
+.again {
+  background: #f3f4f6;
+}
+
+.again:hover {
+  background: #e5e7eb;
+}
+
+/* Reset */
+.reset {
+  background: #ef4444;
+  color: white;
+}
+
+.reset:hover {
+  background: #dc2626;
+}
+
+/* Text */
+.message {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.score-box {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  .game {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .number {
+    width: 12rem;
+    font-size: 3rem;
+  }
+}
